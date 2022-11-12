@@ -1,6 +1,41 @@
-header{
-    border: solid black 1px;
-    padding: 30px;
-    text-align: center;
-    
+* {
+    margin: 0;
+    padding: 0;
 }
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header {
+    border: solid black 1px;
+    padding: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.pagina{
+    min-height: calc(100vh - 107px);
+}
+
+.content{
+    width: 1098px;
+    margin: auto;
+}
+
+footer{
+    border: solid black 1px;
+    text-align: center;
+    margin: 5px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    font-family: 'Sono', sans-serif;
+  }
