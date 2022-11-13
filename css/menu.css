@@ -9,7 +9,7 @@
 
 .menu li {
     position: relative;
-    border: 1px solid #c0c0c0;
+    border: 1px solid black;
 }
 
 .menu li a {
@@ -23,18 +23,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .menu li a img{
     margin-left: 5px;
 }
 
 .selected{
-    background: #333;
+    background: #8C8377 !important;
     color: #fff !important;
 }
 
 .menu li a:hover {
-    background: #333;
+    background: #8C8377;
     color: #fff;
 }
 .menu li a:hover img{

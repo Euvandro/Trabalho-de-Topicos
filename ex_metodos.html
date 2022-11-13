@@ -27,7 +27,7 @@
         </header>
         <nav>
             <ul class="menu">
-                <li><a class="selected" href="index.html">Introdução</a></li>
+                <li><a href="index.html">Introdução</a></li>
                 <li><a href="scripts.html">Scripts</a></li>
                 <li><a href="metodos.html">Métodos</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
@@ -41,7 +41,7 @@
                 </li>
                 <li><a href="">Exemplos <img src="imgs/arrow_down.svg" width="15px"></a>
                     <ul>
-                        <li><a href="ex_metodos.html">Métodos</a></li>
+                        <li><a class="selected" href="ex_metodos.html">Métodos</a></li>
                         <li><a href="ex_eventos.html">Eventos</a></li>
                         <li><a href="ex_funcoes.html">Funções</a></li>
                         <li><a href="ex_jquery.html">JQuery</a></li>
@@ -56,9 +56,45 @@
         <div class="content">
 
             <article>
-                <h2>Introdução</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>Document</h2>
+                <ul>
+                    <li>Variavel global do Javascript que representa a página inteira.</li>
+                    <li>Possui funções que permitem manipular os elementos html da página.</li>
+                </ul>
+
+                <p>Para atribuir a uma variável pode ser utilizada conforme o exemplo abaixo.</p>
+                
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                var dom = document;
+            </script>
+                    </code>
+                </pre>
             </article>
+
+            <article>
+                <h2>getElementById</h2>
+                <p></p>
+                <ul>
+                    <li>Método dentro do objeto "document".</li>
+                    <li>Retorna um elemento da página utilizando como paramentro seu atributo "id".</li>
+                </ul>
+                <p>Exemplo:</p>
+
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                var obj_menu = document.getElementById("menu");
+            </script>
+                    </code>
+                </pre>
+
+                <p>Após isso podemos utilizar a variavel "obj_menu" para manipular as propriedades do elemento com id: "menu".</p>
+
+            </article>
+
+            
 
         </div>
 

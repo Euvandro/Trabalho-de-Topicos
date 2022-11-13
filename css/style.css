@@ -2,28 +2,32 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: larger;
+    background-color: #D9CEC5;
 }
+
 header {
     border: solid black 1px;
     padding: 50px;
     text-align: center;
     margin: 5px;
-    background-color: peachpuff;
+    background-color: #8C8377;
+    color: white;
 }
 
-.pagina{
+.pagina {
     min-height: calc(100vh - 107px);
 }
 
-.content{
+.content {
     width: 1098px;
     margin: auto;
 }
 
-footer{
+footer {
     border: solid black 1px;
     text-align: center;
     margin: 5px;
@@ -31,6 +35,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #8C8377;
+    color: white;
 }
 
 
@@ -40,4 +46,20 @@ pre code {
     display: block;
     padding: 20px;
     font-family: 'Sono', sans-serif;
-  }
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    border: solid 1px black;
+    margin-bottom: 30px;
+}
+
+.content p{
+    margin-top: 10px;
+}
+
+.content ul{
+    margin-top: 10px;
+    padding-left: 30px;
+}
