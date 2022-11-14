@@ -52,12 +52,78 @@
             </ul>
         </nav>
 
+        <div class="content"><article><h1>Eventos</h1></article></div>
 
         <div class="content">
 
             <article>
-                <h2>##</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>onmouseover</h2>
+                <p>Evento que ocorre quando o usuário coloca o cursor em cima de um elemento HTML</p>
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">
+                    "MUDANDO A COR"</h3>
+            </script>
+                    </code>
+                    <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
+                    <script>
+                        function mouseA() {
+                        document.getElementById("mudacor").style.color = "lightblue";
+                        }
+
+                        function mouseB() {
+                        document.getElementById("mudacor").style.color = "black";
+                        }
+                    </script>
+                </pre>
+            </article>
+
+        </div>
+
+        <div class="content">
+
+            <article>
+                <h2>onclick</h2>
+                <p>Evento que ocorre quando o usuário clica em um elemento HTML</p>                
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
+                .<button type="button" 
+                    onclick="document.getElementById('maior').style.fontSize='30px'">
+                    Clique para aumentar a fonte</button>
+            </script>
+                    </code>
+                    <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
+                    <button id="botaoaumenta" type="button" onclick="document.getElementById('maior').style.fontSize='30px'">Clique para aumentar a fonte</button>
+                </pre>
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                <button onclick="this.innerHTML=Date()">
+                    Clique aqui para mostrar o horário</button>
+            </script>
+                    </code>
+                    <button id="botaohorario" onclick="this.innerHTML=Date()">Clique aqui para mostrar o horário</button>
+                </pre>
+
+            </article>
+
+        </div>
+
+        <div class="content">
+
+            <article>
+                <h2>onclick</h2>
+                <p></p>                
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                
+            </script>
+                    </code>
+                </pre>
             </article>
 
         </div>

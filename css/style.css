@@ -63,3 +63,27 @@ article {
     margin-top: 10px;
     padding-left: 30px;
 }
+
+#botaohorario{
+    background-color: lightblue;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 170px;
+}
+
+#mudacor{
+    font-size: 30px;
+    margin-left: 370px;
+}
+
+#maior{
+    font-size: 20px;
+    float: center;
+}
+
+#botaoaumenta{
+    font-size: 20px;
+    background-color: lightblue;
+    margin-left: 200px;
+    padding: 5px 5px 5px 5px;
+}
