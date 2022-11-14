@@ -140,32 +140,33 @@
 
             <article>
                 <h2>onmouseover com coordenadas</h2>
-                <p></p>
                 <pre>
-                    <code class="codigo_html">
-
-                    </code>
-            <script>
-                function writeText(txt) {
-                    document.getElementById("desc").innerHTML = txt;
-                }
-            </script>
-            <img id="Image-Maps-Com-image-maps-2022-11-14-140629" src="img/mapa.jpg" 
-                width="1024" height="765" orgWidth="1024" orgHeight="765" usemap="#image-maps-2022-11-14-140629" alt="" />
-            <map name="image-maps-2022-11-14-140629" id="ImageMapsCom-image-maps-2022-11-14-140629">
-                <area  alt="Mordor" title="Mordor" href="" shape="rect" coords="606,384,833,545" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Mordor -  o reino de Sauron, região localizada na parte sudeste da Terra-Média.')"   />
-                <area  alt="Condado" title="Condado" href="" shape="rect" coords="278,164,385,298" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Condado - terra natal dos Hobbits, localizada no noroeste da Terra-Média, na região de Eriador.')"   />
-                <area  alt="Erebor" title="Erebor" href="" shape="rect" coords="568,121,635,178" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Erebor - a Montanha Solitária, foi o maior reino da Terra-Média, habitada por anões e homens.')"   />
-                <area  alt="Rohan" title="Rohan" href="" shape="rect" coords="474,362,541,419" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Rohan - reino dos homens, situada no grande vale entre as Montanhas Nebulosas e as Montanhas Brancas ao sul.')"   />
-                <area  alt="Gondor" title="Gondor" href="" shape="rect" coords="326,445,533,532" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Gondor - o reinado mais poderoso dos Homens na Terra-Média.')"   />
-                <area  alt="Rhovanion" title="Rhovanion" href="" shape="rect" coords="517,183,614,317" style="outline:none;" target="_self"  
-                    onmouseover="writeText('Rhovanion - grande região da Terra-Média, atravessada pelo rio Anduin e amplamente coberta pela Grande Floresta Verde.')"   />
-                <area shape="rect" coords="1022,763,1024,765" alt="Image Map" style="outline:none;" title="Image Map" href="" />
+                    <script>
+                        function writeText(txt) {
+                          document.getElementById("desc").innerHTML = txt;
+                        }
+                    </script>
+                
+                    <img id="mapa" src="imgs/mapa.jpg" width="820" height="613" orgWidth="820" orgHeight="613" 
+                        usemap="#image-maps-2022-11-14-185236" alt="" />
+                    <map name="mapaTM" id="mapa">
+                        <area  alt="" title="Mordor" href="" shape="rect" coords="484,308,682,443" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Mordor -  o reino de Sauron, região localizada na parte sudeste da Terra-Média.')"   />
+                        <area  alt="" title="Gondor" href="" shape="rect" coords="259,361,457,453" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Gondor - o reinado mais poderoso dos Homens na Terra-Média.')"   />
+                        <area  alt="" title="Rohan" href="" shape="rect" coords="374,274,446,336" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Rohan - reino dos homens, situada no grande vale entre as Montanhas Nebulosas e as Montanhas Brancas ao sul.')"   />
+                        <area  alt="" title="Condado" href="" shape="rect" coords="219,132,312,236" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Condado - terra natal dos Hobbits, localizada no noroeste da Terra-Média, na região de Eriador.')"   />
+                        <area  alt="" title="Rhovanion" href="" shape="rect" coords="416,129,499,263" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Rhovanion - grande região da Terra-Média, atravessada pelo rio Anduin e amplamente coberta pela Grande Floresta Verde.')"   />
+                        <area  alt="" title="Colinas de Ferro" href="" shape="rect" coords="514,90,624,132" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Colinas de Ferro - cordilheira imensa localizada no norte da Terra-Média.')"   />
+                        <area  alt="" title="Erebor" href="" shape="rect" coords="466,91,500,133" style="outline:none;" target="_self"  
+                            onmouseover="writeText('Erebor - a Montanha Solitária, foi o maior reino da Terra-Média, habitada por anões e homens.')"   />
+                        <area  alt="" title="Isengard" href="" shape="rect" coords="338,277,372,319" style="outline:none;" target="_self"     />
+                        <area shape="rect" coords="818,611,820,613" alt="Image Map" style="outline:none;" title="Image Map" href="" />
+                    </map>
                             
             <h3 id="desc">Passe o mouse por cima para ver a descrição</h3>
             </map>
