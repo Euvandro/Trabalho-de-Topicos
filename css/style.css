@@ -46,6 +46,7 @@ pre code {
     display: block;
     padding: 20px;
     font-family: 'Sono', sans-serif;
+    white-space: break-spaces !important;
 }
 
 article {
@@ -53,6 +54,10 @@ article {
     padding: 30px;
     border: solid 1px black;
     margin-bottom: 30px;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .content p{
@@ -64,11 +69,17 @@ article {
     padding-left: 30px;
 }
 
-#botaohorario{
+button{
     background-color: lightblue;
     font-size: 20px;
-    padding: 5px 5px 5px 5px;
-    margin-left: 170px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(105, 149, 163);
+    color: white;
 }
 
 #mudacor{
@@ -78,12 +89,4 @@ article {
 
 #maior{
     font-size: 20px;
-    float: center;
-}
-
-#botaoaumenta{
-    font-size: 20px;
-    background-color: lightblue;
-    margin-left: 200px;
-    padding: 5px 5px 5px 5px;
 }

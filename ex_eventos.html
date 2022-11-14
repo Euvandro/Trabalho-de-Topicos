@@ -52,7 +52,11 @@
             </ul>
         </nav>
 
-        <div class="content"><article><h1>Eventos</h1></article></div>
+        <div class="content">
+            <article>
+                <h1>Eventos</h1>
+            </article>
+        </div>
 
         <div class="content">
 
@@ -61,19 +65,27 @@
                 <p>Evento que ocorre quando o usuário coloca o cursor em cima de um elemento HTML</p>
                 <pre>
                     <code class="codigo_html">
-            <script>
-                <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">
-                    "MUDANDO A COR"</h3>
-            </script>
+            
+<h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
+<script>
+    function mouseA() {
+        document.getElementById("mudacor").style.color = "lightblue";
+    }
+
+    function mouseB() {
+        document.getElementById("mudacor").style.color = "black";
+    }
+</script>
+            
                     </code>
                     <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
                     <script>
                         function mouseA() {
-                        document.getElementById("mudacor").style.color = "lightblue";
+                            document.getElementById("mudacor").style.color = "lightblue";
                         }
 
                         function mouseB() {
-                        document.getElementById("mudacor").style.color = "black";
+                            document.getElementById("mudacor").style.color = "black";
                         }
                     </script>
                 </pre>
@@ -85,27 +97,41 @@
 
             <article>
                 <h2>onclick</h2>
-                <p>Evento que ocorre quando o usuário clica em um elemento HTML</p>                
+                <p>Evento que ocorre quando o usuário clica em um elemento HTML</p>
                 <pre>
                     <code class="codigo_html">
-                <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
-                <button type="button" 
-                    onclick="document.getElementById('maior').style.fontSize='30px'">
-                    Clique para aumentar a fonte</button>
+<p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
+<button type="button" onclick="document.getElementById('maior').style.fontSize='30px'">
+    Aumentar a fonte
+</button>
+
+<button type="button" onclick="document.getElementById('maior').style.fontSize='20px'">
+    Diminuir a fonte
+</button>
                     </code>
-                    <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
-                    <button id="botaoaumenta" type="button" onclick="document.getElementById('maior').style.fontSize='30px'">Clique para aumentar a fonte</button>
-                </pre>
-                <pre>
-                    <code class="codigo_html">
-            <script>
-                <button onclick="this.innerHTML=Date()">
-                    Clique aqui para mostrar o horário</button>
-            </script>
-                    </code>
-                    <button id="botaohorario" onclick="this.innerHTML=Date()">Clique aqui para mostrar o horário</button>
+                    
                 </pre>
 
+                <div class="text-center">
+                    <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
+                    <button id="botaoaumenta" type="button" onclick="document.getElementById('maior').style.fontSize='30px'">Aumentar a fonte</button>
+                    <button type="button" onclick="document.getElementById('maior').style.fontSize='20px'">
+                        Diminuir a fonte
+                    </button>
+                </div>
+                <pre>
+                    <code class="codigo_html">
+                <button onclick="this.innerHTML=Date()">
+                    Clique aqui para mostrar o horário
+                </button>
+                    </code>
+                    
+                </pre>
+                <div class="text-center">
+
+                    <button id="botaohorario" onclick="this.innerHTML=Date()">Clique aqui para mostrar o
+                        horário</button>
+                </div>
             </article>
 
         </div>
@@ -114,15 +140,15 @@
 
             <article>
                 <h2>onmouseover com coordenadas</h2>
-                <p></p>                
+                <p></p>
                 <pre>
                     <code class="codigo_html">
 
                     </code>
             <script>
                 function writeText(txt) {
-  		        document.getElementById("desc").innerHTML = txt;
-		        }
+                    document.getElementById("desc").innerHTML = txt;
+                }
             </script>
             <img id="Image-Maps-Com-image-maps-2022-11-14-140629" src="img/mapa.jpg" 
                 width="1024" height="765" orgWidth="1024" orgHeight="765" usemap="#image-maps-2022-11-14-140629" alt="" />
@@ -153,8 +179,8 @@
     </div>
     <footer>
         Tópicos Especiais em Tecnologias Digitais - 2022.2 /
-Profª Drª Marina Carradore Sérgio
-<br>
+        Profª Drª Marina Carradore Sérgio
+        <br>
         Evandro Machado Pereira e
         Lorenzo Mendes Rodrigues
     </footer>
