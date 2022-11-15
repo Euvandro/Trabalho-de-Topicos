@@ -114,7 +114,7 @@
 
                 <div class="text-center">
                     <p id="maior">Pode-se alterar o estilo dos elementos HTML</p>
-                    <button id="botaoaumenta" type="button" onclick="document.getElementById('maior').style.fontSize='30px'">Aumentar a fonte</button>
+                    <button type="button" onclick="document.getElementById('maior').style.fontSize='30px'">Aumentar a fonte</button>
                     <button type="button" onclick="document.getElementById('maior').style.fontSize='20px'">
                         Diminuir a fonte
                     </button>
@@ -146,10 +146,13 @@
                           document.getElementById("desc").innerHTML = txt;
                         }
                     </script>
-                
+  
                     <img id="mapa" src="imgs/mapa.jpg" width="820" height="613" orgWidth="820" orgHeight="613" 
-                        usemap="#image-maps-2022-11-14-185236" alt="" />
-                    <map name="image-maps-2022-11-14-185236" id="mapa">
+                    usemap="#image-maps-2022-11-14-185236" alt="" />
+                    <h3 id="desc">Passe o mouse por cima para ver a descrição</h3>
+                </pre>
+            </article>
+                <map name="image-maps-2022-11-14-185236" id="mapa">
                         <area  alt="" title="Mordor" href="" shape="rect" coords="484,308,682,443" style="outline:none;" target="_self"  
                             onmouseover="writeText('Mordor -  o reino de Sauron, região localizada na parte sudeste da Terra-Média.')"   />
                         <area  alt="" title="Gondor" href="" shape="rect" coords="259,361,457,453" style="outline:none;" target="_self"  
@@ -166,12 +169,7 @@
                             onmouseover="writeText('Erebor - a Montanha Solitária, foi o maior reino da Terra-Média, habitada por anões e homens.')"   />
                         <area  alt="" title="Isengard" href="" shape="rect" coords="338,277,372,319" style="outline:none;" target="_self"     />
                         <area shape="rect" coords="818,611,820,613" alt="Image Map" style="outline:none;" title="Image Map" href="" />
-                    </map>
-                            
-            <h3 id="desc">Passe o mouse por cima para ver a descrição</h3>
-            </map>
-                </pre>
-            </article>
+                </map> 
 
         </div>
 
