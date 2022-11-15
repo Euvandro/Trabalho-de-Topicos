@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").hide();
+      });
+    });
+    </script>
+
 </head>
 
 <body>
@@ -58,7 +67,18 @@
 
             <article>
                 <h2>##</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <div class="text-center">
+                <pre>
+                    <h2>Isto é um cabeçalho</h2>
+                    <p>É um parágrafo</p>
+                    <p>É outro parágrafo</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h4>Isto é um cabeçalho</h4>
+                    <p>Ratione totam nam debitis sit sequi esse aperiam possimus aut.</p>
+
+                    <button>Clique para esconder os parágrafos</button>
+                </div>
+                </pre>
             </article>
 
         </div>
