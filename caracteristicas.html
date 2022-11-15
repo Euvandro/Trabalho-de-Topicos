@@ -52,12 +52,49 @@
             </ul>
         </nav>
 
+        <div class="content"><article><h1>Sintaxe</h1></article></div>
 
         <div class="content">
 
             <article>
-                <h2>##</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>var e let</h2>
+                <ul data-header="var" class="titulolista">
+                    <li>Declarações com <strong>var</strong> tem escopo global ou escopo de função/local.</li>
+                    <li><strong>var</strong> tem escopo de função quando é declarado dentro de uma função. 
+                        Isso significa que ele está disponível e pode ser acessado somente de dentro daquela função.</li>
+                    <li>O escopo é global quando uma variável <strong>var</strong> é declarada fora de uma função. 
+                        Isso significa que qualquer variável que seja declarada com var fora de um bloco de função pode ser utilizada na janela inteira.</li>
+                    <li class="atencao">Variáveis de var podem ser declaradas de novo e atualizadas!</li>
+                </ul>
+                <pre>
+                    <code class="codigo_html">
+                        var greeter = "hey hi";
+                        greeter = "say Hello instead";
+
+                        //ou
+
+                        var greeter = "hey hi";
+                        var greeter = "say Hello instead";
+                    </code>
+                </pre>
+                <ul data-header="let" class="titulolista">
+                    <li class="atencao">let pode ser atualizado, mas não declarado novamente!</li>
+                    <li><strong>let</strong> tem escopo de bloco. Tudo o que estiver cercado por chaves é um bloco.</li>
+                    <li>Uma variável declarada com <strong>let</strong> em um bloco estará disponível apenas dentro daquele bloco.</li>
+                </ul>
+                <pre>
+                    <code class="codigo_html">
+                        let greeting = "say Hi";
+                        greeting = "say Hello instead";
+
+                        //mas não
+
+                        let greeting = "say Hi";
+                        let greeting = "say Hello instead";  
+                    // erro: identificador 'greeting' já foi declarado
+                    </code>
+                </pre>
+
             </article>
 
         </div>
