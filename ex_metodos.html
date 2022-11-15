@@ -52,46 +52,14 @@
             </ul>
         </nav>
 
-        <div class="content"><article><h1>Métodos</h1></article></div>
+        
 
         <div class="content">
-
-            <article>
-                <h2>Document</h2>
-                <ul>
-                    <li>Variavel global do Javascript que representa a página inteira.</li>
-                    <li>Possui funções que permitem manipular os elementos html da página.</li>
-                </ul>
-
-                <p>Para atribuir a uma variável pode ser utilizada conforme o exemplo abaixo.</p>
-                
-                <pre>
-                    <code class="codigo_html">
-            <script>
-                var dom = document;
-            </script>
-                    </code>
-                </pre>
-            </article>
+            <article><h1>Exemplos de Métodos</h1></article>
 
             <article>
                 <h2>getElementById</h2>
-                <p></p>
-                <ul>
-                    <li>Método dentro do objeto "document".</li>
-                    <li>Retorna um elemento da página utilizando como paramentro seu atributo "id".</li>
-                </ul>
-                <p>Exemplo:</p>
-
-                <pre>
-                    <code class="codigo_html">
-            <script>
-                var obj_menu = document.getElementById("menu");
-            </script>
-                    </code>
-                </pre>
-
-                <p>Após isso podemos utilizar a variavel "obj_menu" para manipular as propriedades do elemento com id: "menu".</p>
+                
 
                 <pre>
                     <code class="codigo_html">
@@ -102,13 +70,14 @@
     'MUDOU!'">Clique aqui para mudar
 </button>
                     </code>
+                </pre>
+                <div class="text-center">
                     <p id="mudar">JavaScript pode mudar o conteúdo do HTML</p>
                     <button type="button"
-                        onclick="document.getElementById('mudar').innerHTML = 
-                        'MUDOU!'">Clique aqui para mudar
+                        onclick="document.getElementById('mudar').innerHTML = 'MUDOU!'">Clique aqui para mudar
                     </button>
-                </pre>
-
+                
+                </div>
             </article>
 
             
