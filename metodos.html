@@ -52,13 +52,69 @@
             </ul>
         </nav>
 
-
         <div class="content">
+        <article><h1>Métodos</h1></article>
+            
+            <article>
+                <h2>document</h2>
+                <ul>
+                    <li>Variavel global do Javascript que representa a página inteira.</li>
+                    <li>Possui funções que permitem manipular os elementos html da página.</li>
+                </ul>
+
+                <p>Para atribuir a uma variável pode ser utilizada conforme o exemplo abaixo.</p>
+                
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                var dom = document;
+            </script>
+                    </code>
+                </pre>
+            </article>
 
             <article>
-                <h2>Métodos</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>document.getElementById</h2>
+                <p></p>
+                <ul>
+                    <li>Método dentro do objeto "document".</li>
+                    <li>Retorna um elemento da página utilizando como paramentro seu atributo "id".</li>
+                </ul>
+                <p>Exemplo:</p>
+
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                var obj_menu = document.getElementById("menu");
+            </script>
+                    </code>
+                </pre>
+
+                <p>Após isso podemos utilizar a variavel "obj_menu" para manipular as propriedades do elemento com id: "menu".</p>
             </article>
+
+
+            <article>
+                <h2>document.getElementsByTagName</h2>
+                <p></p>
+                <ul>
+                    <li>Método dentro do objeto "document".</li>
+                    <li>Retorna um array de elementos baseado pelo seu tipo.</li>
+                </ul>
+                <p>Exemplo:</p>
+
+                <pre>
+                    <code class="codigo_html">
+            <script>
+                var paragrafos = document.getElementsByTagName("p");
+            </script>
+                    </code>
+                </pre>
+
+                <p>A variavel "paragrafos" será um array contendo todos os elementos do tipo "p" dentro dá pagina.</p>
+            </article>
+
+            
 
         </div>
 
