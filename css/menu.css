@@ -30,12 +30,12 @@
 }
 
 .selected{
-    background: #8C8377 !important;
+    background: #e088df !important;
     color: #fff !important;
 }
 
 .menu li a:hover {
-    background: #8C8377;
+    background: #e088df;
     color: #fff;
 }
 .menu li a:hover img{

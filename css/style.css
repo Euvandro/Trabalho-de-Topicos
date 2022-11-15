@@ -6,7 +6,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: larger;
-    background-color: #D9CEC5;
+    background-color: #fce390;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     padding: 50px;
     text-align: center;
     margin: 5px;
-    background-color: #8C8377;
+    background-color: #000000;
     color: white;
 }
 
@@ -35,7 +35,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8C8377;
+    background-color: black;
     color: white;
 }
 
