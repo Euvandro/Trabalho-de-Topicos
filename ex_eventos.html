@@ -58,38 +58,6 @@
             </article>
 
             <article>
-                <h2>onmouseover</h2>
-                <p>Evento que ocorre quando o usuário coloca o cursor em cima de um elemento HTML</p>
-                <pre>
-                    <code class="codigo_html">
-            
-<h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
-<script>
-    function mouseA() {
-        document.getElementById("mudacor").style.color = "lightblue";
-    }
-
-    function mouseB() {
-        document.getElementById("mudacor").style.color = "black";
-    }
-</script>
-            
-                    </code>
-                    <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
-                    <script>
-                        function mouseA() {
-                            document.getElementById("mudacor").style.color = "lightblue";
-                        }
-
-                        function mouseB() {
-                            document.getElementById("mudacor").style.color = "black";
-                        }
-                    </script>
-                </pre>
-            </article>
-
-
-            <article>
                 <h2>onclick</h2>
                 <p>Evento que ocorre quando o usuário clica em um elemento HTML</p>
                 <pre>
@@ -128,6 +96,37 @@
                 </div>
             </article>
 
+            <article>
+                <h2>onmouseover</h2>
+                <p>Evento que ocorre quando o usuário coloca o cursor em cima de um elemento HTML</p>
+                <pre>
+                    <code class="codigo_html">
+            
+<h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
+<script>
+    function mouseA() {
+        document.getElementById("mudacor").style.color = "lightblue";
+    }
+
+    function mouseB() {
+        document.getElementById("mudacor").style.color = "black";
+    }
+</script>
+            
+                    </code>
+                    <h3 id="mudacor" onmouseover="mouseA()" onmouseout="mouseB()">"MUDANDO A COR"</h3>
+                    <script>
+                        function mouseA() {
+                            document.getElementById("mudacor").style.color = "lightblue";
+                        }
+
+                        function mouseB() {
+                            document.getElementById("mudacor").style.color = "black";
+                        }
+                    </script>
+                </pre>
+            </article>
+
 
             <article>
                 <h2>onmouseover com coordenadas</h2>
@@ -162,6 +161,49 @@
                         <area shape="rect" coords="818,611,820,613" alt="Image Map" style="outline:none;" title="Image Map" href="" />
                 </map> 
 
+            <article>
+
+                <h2>onchange</h2>
+
+                <pre>
+                    <code class="codigo_html">
+
+<select id="selecao" onchange="funcao()">
+    <option value="Tecnologias da Informação e Comunicação">Tecnologias da Informação e Comunicação</option>
+    <option value="Engenharia da Computação">Engenharia da Computação</option>
+    <option value="Fisioterapia">Fisioterapia</option>
+    <option value="Medicina">Medicina</option>
+</select>
+<p>Você selecionou ...</p>
+<script>
+function funcao(){
+    var valorSelecao = document.getElementById("selecao").value;
+
+    document.getElementById("ResultadoSelecao").innerHTML = "Você selecionou " + valorSelecao;
+}
+</script>
+
+                    </code>
+                </pre>
+                <div class="text-center">
+
+                <select id="selecao" onchange="funcao()">
+                    <option value="Tecnologias da Informação e Comunicação">Tecnologias da Informação e Comunicação</option>
+                    <option value="Engenharia da Computação">Engenharia da Computação</option>
+                    <option value="Fisioterapia">Fisioterapia</option>
+                    <option value="Medicina">Medicina</option>
+                </select>
+                <p id="ResultadoSelecao">Você selecionou ...</p>
+            </div>
+                <script>
+                function funcao(){
+                    var valorSelecao = document.getElementById("selecao").value;
+                    
+                    document.getElementById("ResultadoSelecao").innerHTML = "Você selecionou " + valorSelecao;
+                }
+                </script>
+
+            </article>
         </div>
 
     </div>
