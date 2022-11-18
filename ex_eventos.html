@@ -169,7 +169,7 @@
             <article>
 
                 <h2>onchange</h2>
-
+                    <p>Evento que é adicionado a elementos de formulários.</p>
                 <pre>
                     <code class="codigo_html">
 
@@ -207,6 +207,18 @@ function funcao(){
                     document.getElementById("ResultadoSelecao").innerHTML = "Você selecionou " + valorSelecao;
                 }
                 </script>
+
+                <pre>
+                    <code class="codigo_html">
+<input type="text" id="campoTexto" onchange="document.getElementById('valorCampoTexto').innerHTML = this.value">
+<p id="valorCampoTexto">Digite algo acima</p>
+                    </code>
+                </pre>
+
+                <div class="text-center">
+                    <input type="text" id="campoTexto" onchange="document.getElementById('valorCampoTexto').innerHTML = this.value">
+                    <p id="valorCampoTexto">Digite algo acima</p>
+                </div>
 
             </article>
         </div>

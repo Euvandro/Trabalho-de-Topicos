@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 
 </head>
 
@@ -56,10 +56,12 @@
             </ul>
         </nav>
 
-        
+
 
         <div class="content">
-            <article><h1>Exemplos de Métodos</h1></article>
+            <article>
+                <h1>Exemplos de Métodos</h1>
+            </article>
 
             <article>
                 <h2>getElementById</h2>
@@ -70,17 +72,17 @@
 <p id="mudar">JavaScript pode mudar o conteúdo do HTML</p>
            
 <button type="button"
-    onclick="document.getElementById('mudar').innerHTML = 
-    'MUDOU!'">Clique aqui para mudar
+    onclick="document.getElementById('mudar').innerHTML = 'MUDOU!'" >
+    Clique aqui para mudar
 </button>
                     </code>
                 </pre>
                 <div class="text-center">
                     <p id="mudar">JavaScript pode mudar o conteúdo do HTML</p>
-                    <button type="button"
-                        onclick="document.getElementById('mudar').innerHTML = 'MUDOU!'">Clique aqui para mudar
+                    <button type="button" onclick="document.getElementById('mudar').innerHTML = 'MUDOU!'">Clique aqui
+                        para mudar
                     </button>
-                
+
                 </div>
             </article>
 
@@ -89,35 +91,105 @@
 
             <article>
                 <h2>getElementsByTagName</h2>
+                <ul>
+                    <li>getElementsByClassName</li>
+                    <li>getElementsByName</li>
+                </ul>
 
                 <pre>
                 <code class="codigo_html">
 
 <script>
-var codElements = document.getElementsByTagName("code");
 
-for (let i = 0; i < codElements.length; i++) {
-    var text = codElements.item(i).innerHTML;
-    text = text.replaceAll('<', "&lt;");
-    text = text.replaceAll('>', "&gt;");
-    console.log(text);
-    codElements.item(i).innerHTML = text;
-}
+    var codElements = document.getElementsByTagName("code");
+
+    for (let i = 0; i < codElements.length; i++) {
+        var text = codElements.item(i).innerHTML;
+        text = text.replaceAll('<', "&lt;"); //&amp;lt;
+        text = text.replaceAll('>', "&gt;"); //&amp;gt;
+        console.log(text);
+        codElements.item(i).innerHTML = text;
+        //hljs.highlightElement(codElements.item(i));
+    }
 </script>
 
                 </code>
             </pre>
             </article>
 
-            
+            <article>
+                <h2>appendChild e removeChild</h2>
+                <p>Após o retorno de um elemento como nos exemplos acima podemos utilizar de alguns métodos que ele
+                    possui afim de manipula-lo.</p>
+
+                <pre>
+                    <code class="codigo_html">
+<div class="cubos" id="divArea"></div>
+
+<button type="button" onclick="AdicionarDiv()">
+    Adicionar DIV
+</button>
+<button type="button" onclick="RemoverDiv()">
+    Remover DIV
+</button>
+
+<script>
+    function AdicionarDiv() {
+        let divArea = document.getElementById('divArea');
+        let div = document.createElement('div');
+        div.style.backgroundColor = gerarCor();
+        divArea.appendChild(div);
+    }
+    function gerarCor(){
+        return "#" + ((1<<24)*Math.random() | 0).toString(16);
+    }
+    function RemoverDiv(){
+        let divArea = document.getElementById('divArea');
+        divArea.removeChild(divArea.lastChild);
+    }
+</script>
+                    </code>
+                </pre>
+
+                <div class="text-center">
+                    <div class="cubos" id="divArea"></div>
+
+                    <button type="button" onclick="AdicionarDiv()">
+                        Adicionar DIV
+                    </button>
+                    <button type="button" onclick="RemoverDiv()">
+                        Remover DIV
+                    </button>
+
+                    <script>
+                        
+
+                        function AdicionarDiv() {
+                            let divArea = document.getElementById('divArea');
+                            let div = document.createElement('div');
+                            div.style.backgroundColor = gerarCor();
+                            divArea.appendChild(div);
+                        }
+                        function gerarCor(){
+                            return "#" + ((1<<24)*Math.random() | 0).toString(16);
+                        }
+                        function RemoverDiv(){
+                            let divArea = document.getElementById('divArea');
+                            divArea.removeChild(divArea.lastChild);
+                        }
+                    </script>
+                </div>
+
+            </article>
+
 
         </div>
 
     </div>
     <footer>
         Tópicos Especiais em Tecnologias Digitais - 2022.2 /
-Profª Drª Marina Carradore Sérgio
-<br>
+        Profª Drª Marina Carradore Sérgio
+        <br>
         Evandro Machado Pereira e
         Lorenzo Mendes Rodrigues
     </footer>

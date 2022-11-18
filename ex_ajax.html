@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 
 </head>
 
@@ -56,13 +55,66 @@
             </ul>
         </nav>
 
-        <div class="content"><article><h1>AJAX</h1></article></div>
-
         <div class="content">
 
             <article>
-                <h2>##</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>Requisições</h2>
+                <p>A função Fetch por padrão é utilizada no Javascript para realizar requisições á páginas externas.</p>
+                <p>Por ser uma função assincrona, isso é, não tem um retorno imediato, precisamos aguardar a resposta do
+                    servidor, utilizamos o método "then", onde passamos como parametro a função que ele deve retornar
+                    depois do retorno do servidor.</p>
+
+                    <pre>
+                        <code class="codigo_html">
+<div>
+    <img src="" id="rapImg" style="margin: auto;">
+    <img src="imgs/carregando.gif" id="carregando" style="display: none;">
+</div>
+<button onclick="novaImagem()">Nova Imagem</button>
+
+<script>
+    function novaImagem() {
+        document.getElementById("carregando").style.display = "block";
+        document.getElementById("rapImg").style.display = "none"
+        fetch('https://randomfox.ca/floof/')
+            .then((data) => data.json())
+            .then((data) => {
+/* data = {
+    "image":"https:\/\/randomfox.ca\/images\/64.jpg",
+    "link":"https:\/\/randomfox.ca\/?i=64"
+}*/
+                document.getElementById("rapImg").src = data.image;
+                document.getElementById("carregando").style.display = "none";
+                document.getElementById("rapImg").style.display = "block"
+            })
+    }
+
+</script>
+                        </code>
+                    </pre>
+
+                <div class="text-center">
+                    <div>
+                        <img src="" id="rapImg" style="margin: auto;">
+                        <img src="imgs/carregando.gif" id="carregando" style="display: none; margin: auto;">
+                    </div>
+                    <button onclick="novaImagem()">Nova Imagem</button>
+
+                    <script>
+                        function novaImagem() {
+                            document.getElementById("carregando").style.display = "block";
+                            document.getElementById("rapImg").style.display = "none"
+                            fetch('https://randomfox.ca/floof/')
+                                .then((data) => data.json())
+                                .then((data) => {
+                                    document.getElementById("rapImg").src = data.image;
+                                    document.getElementById("carregando").style.display = "none";
+                                    document.getElementById("rapImg").style.display = "block"
+                                })
+                        }
+
+                    </script>
+                </div>
             </article>
 
         </div>
@@ -72,8 +124,8 @@
     </div>
     <footer>
         Tópicos Especiais em Tecnologias Digitais - 2022.2 /
-Profª Drª Marina Carradore Sérgio
-<br>
+        Profª Drª Marina Carradore Sérgio
+        <br>
         Evandro Machado Pereira e
         Lorenzo Mendes Rodrigues
     </footer>

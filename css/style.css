@@ -153,3 +153,22 @@ ul{
     color: rgb(175, 0, 0);
     font-size: 110%;
 }
+.cubos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cubos div{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border: solid black 1px;
+    margin: 3px;
+}
+
+#rapImg{
+    max-width: 300px;
+    clear: both;
+}

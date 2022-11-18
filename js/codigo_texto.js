@@ -7,6 +7,7 @@ for (let i = 0; i < cod.length; i++) {
     text = text.replaceAll('>', "&gt;");
     console.log(text);
     cod.item(i).innerHTML = text;
+    cod.item(i).classList.add('language-html');
     hljs.highlightElement(cod.item(i));
 
 }
