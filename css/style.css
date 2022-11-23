@@ -195,3 +195,20 @@ ul{
     background-color: #e088df;
     color: black;
   }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(odd) {
+    background-color: #d1fffb;
+  }
+  tr:nth-child(even) {
+    background-color: #ffc6fc;
+  }
