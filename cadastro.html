@@ -32,7 +32,7 @@
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Introdução</a></li>
-                <li><a class="selected" href="scripts.html">Scripts</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
                 <li><a href="metodos.html">Métodos</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="funcoes.html">Funções</a></li>
@@ -58,25 +58,28 @@
 
 
         <div class="content">
-        <article><h1>Scripts</h1></article>
-        <article>
-            <h2>Como usar</h2>
-            <p>No HTML coloca-se o código JS entre as tags 'script', as tags ficam dentro de 'head' ou 'body'</p>
-            <pre>
-                <code class="codigo_html">
-<script>
-//código para execução
-</script>
-                </code>
-            </pre>
-            <p>Pode-se também usar um arquivo externo '.js'</p>
-            <p>Coloca-se no código HTML:</p>
-            <pre>
-                <code class="codigo_html">
-<script src="myScript.js"></script>
-                </code>
-            </pre>
-        </article>
+
+            <article>
+                <h2>Cadastro</h2>
+            </article>
+            <article>
+                <form>
+                <p>Cadastre-se para receber novidades por email!</p><br>
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <p>Qual conteúdo você tem interesse?</p>
+
+                  <input type="checkbox" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="checkbox" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label><br><br>
+                <input type="submit" value="Enviar">
+                </form></article>
         </div>
 
 
