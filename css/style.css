@@ -207,16 +207,16 @@ ul{
     padding: 8px;
   }
   tr:nth-child(odd) {
-    background-color: #d1fffb;
+    background-color: #e1fffc;
   }
   tr:nth-child(even) {
-    background-color: #ffc6fc;
+    background-color: #ffe2fe;
   }
 
   iframe{
-    width: 60%;
-    height: 60%;
-    align-items: center;
+    width: 70%;
+    margin:auto;
+    display: block;
   }
 
   .text-wave {
