@@ -21,7 +21,7 @@ header {
     padding: 50px;
     text-align: center;
     margin: 5px;
-    background-color: rgb(0, 0, 97);
+    background-color: rgb(41, 41, 112);
     color: white;
 }
 
@@ -192,7 +192,7 @@ ul{
   }
 
   #Btn:hover {
-    background-color: #e088df;
+    background-color: rgb(209, 211, 255);
     color: black;
   }
 
@@ -212,3 +212,41 @@ ul{
   tr:nth-child(even) {
     background-color: #ffc6fc;
   }
+
+  iframe{
+    width: 60%;
+    height: 60%;
+    align-items: center;
+  }
+
+  .text-wave {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+.text-wave span {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: monospace;
+    animation: wave 3s ease-in-out infinite;
+    animation-delay: calc(.1s*var(--i));
+  }
+
+@keyframes wave {
+    0% {
+      transform: translateY(0px);
+    }
+
+    20% {
+      transform: translateY(-24px);
+    }
+
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+}
