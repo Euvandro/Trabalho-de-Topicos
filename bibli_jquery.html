@@ -40,8 +40,15 @@
                 <span style="--i:10">T</span>
            </div>
         </header>
+        <div class="toolbar">
+            <h1>Javascript</h1>
+        
+            <button id="menu-btn" onclick="toogleMenu()">
+                <img src="imgs/hamburguer.png" width="50px">
+            </button>
+        </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu menu-hidden">
                 <li><a href="index.html">Introdução</a></li>
                 <li><a href="scripts.html">Scripts</a></li>
                 <li><a href="metodos.html">Métodos</a></li>
@@ -63,6 +70,7 @@
                         <li><a href="ex_ajax.html">AJAX</a></li>
                     </ul>
                 </li>
+                <li><a href="cadastro.html">Formulário</a></li>
                 <li><a href="referencias.html">Referências</a></li>
             </ul>
         </nav>
@@ -71,8 +79,27 @@
         <div class="content">
 
             <article>
-                <h2>##</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit iste totam enim maxime labore ipsa praesentium voluptatibus, similique consectetur laboriosam, saepe dolorem debitis ea tempore illum. Commodi, expedita voluptatum.</p>
+                <h2>Jquery</h2>
+                <p>Facilita o uso do Javascript no site.</p>
+                <p>Seleciona-se elemmentos HTML e realiza algum ação</p>
+
+                <div style="background-color: gray; padding: 50px; margin: 50px; width: 70%;">
+                    <img src="imgs/jquery.png" alt="" style="width: 100%;">
+                </div>
+
+                <pre>
+                    <code class="codigo_html">
+<script>
+    $(document).ready(function(){
+        //Função que é executada quando a página carrega
+    });
+
+    $("#menu").click(function(){
+        //O que acontece se pressionar o elemento com id: menu
+    });
+</script>
+                    </code>
+                </pre>
             </article>
 
         </div>

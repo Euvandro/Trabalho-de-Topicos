@@ -54,3 +54,68 @@
     display: block;
     list-style: none;
 }
+
+.toolbar{
+    background-color: #333;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    display: none;
+}
+
+.toolbar button{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+    display: flex;
+}
+
+.toolbar button:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+.menu-hidden{
+    display: flex !important;
+}
+
+@media (max-width: 1024px)
+{
+  header
+   {
+    display: none;
+   }
+   .toolbar{
+    display: flex;
+   }
+
+   .menu{
+    display: block;
+    margin: 0;
+   }
+
+   .menu li a{
+    width: 100%;
+    justify-content: left;
+    padding-left: 50px;
+   }
+
+   .menu-hidden{
+        display: none !important;
+    }
+
+
+    .menu li ul {
+        position: initial;
+        background-color: #fff;
+        display: block;
+        list-style: none;
+        
+    }
+
+    .menu li ul a{
+        padding-left: 100px;
+        background-color: aliceblue;
+        justify-content: left;
+    }
+}

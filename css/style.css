@@ -11,8 +11,8 @@ body {
 #fundo {
     width: 100%;
     height: 100vh;
-    background-color: #fff2c9;
-    background-image: linear-gradient(120deg, transparent 114px, rgba(173, 216, 230, 0.942) 114px), linear-gradient(240deg, transparent 114px, rgba(173, 216, 230, 0.685) 114px);
+    background-color: #bdd4ff;
+    background-image: linear-gradient(120deg, transparent 114px, rgba(191, 211, 211, 0.692) 114px), linear-gradient(240deg, transparent 114px, rgba(202, 202, 202, 0.685) 114px);
     background-size: 93px 92px;
   }
 
@@ -32,6 +32,17 @@ header {
 .content {
     width: 1098px;
     margin: auto;
+}
+
+@media (max-width: 1024px)
+{
+  .content
+   {
+    width: 90%;
+   }
+   article{
+    margin-top: 20px;
+   }
 }
 
 footer {

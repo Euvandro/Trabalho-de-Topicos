@@ -15,3 +15,14 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function toogleMenu() {
+  console.log(document.body.offsetWidth);
+  var x = document.getElementsByClassName("menu")[0];
+  
+  if(x.classList.contains('menu-hidden')){
+    x.classList.remove('menu-hidden');
+  }else{
+    x.classList.add('menu-hidden');
+  }
+}
